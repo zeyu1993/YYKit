@@ -8,10 +8,11 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/ibireme/YYKit'
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
-  s.source       = { :git => 'https://github.com/ibireme/YYKit.git', :tag => s.version.to_s }
+  s.source       = { :git => 'https://github.com/zeyu1993/YYKit.git', :tag => s.version.to_s }
   
   s.requires_arc = true
   s.source_files = 'YYKit/**/*.{h,m}'
+  s.resource_bundles = {'YYKit' => ['YYKit/PrivacyInfo.xcprivacy']}
   s.public_header_files = 'YYKit/**/*.{h}'
 
   non_arc_files = 'YYKit/Base/Foundation/NSObject+YYAddForARC.{h,m}', 'YYKit/Base/Foundation/NSThread+YYAdd.{h,m}'
